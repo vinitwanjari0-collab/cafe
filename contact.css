@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, rgb(16, 92, 79), #f2c94c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+/* Hero Background Zoom-Out Animation */
+.hero {
+    background: url('index_img.jpg') no-repeat center center/cover;
+    height: 100vh;
+    animation: zoomOut 8s ease-out forwards;
+}
+
+/* Zoom-out keyframes */
+@keyframes zoomOut {
+    0% {
+        background-size: 140%; /* start zoomed in */
+    }
+    100% {
+        background-size: 100%; /* slowly zoom-out to normal */
+    }
+}
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background: rgb(16, 92, 79);
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background:#f2c94c;
+}
